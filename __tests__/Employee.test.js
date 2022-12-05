@@ -1,24 +1,48 @@
 const Employee = require("../lib/Employee");
 
-test('creating a employee object', () => {
-    const employee = new Employee('Suresh');
+test("Can instantiate Employee instance", () => {
+  const e = new Employee();
+  expect(typeof(e)).toBe("object");
 });
 
-test('setting id with constructor', () => {
-    const testValue = 100;
-    const e = new Employee('Mohit', testValue);
-    expect(e.id).toBe(testValue);
+test("Can set name via constructor arguments", () => {
+  const name = "Jaya";
+  const e = new Employee(name);
+  expect(e.name).toBe(name);
 });
 
-test('setting email with constructor', () => {
-    const testValue = 'workingemployee@gmail.com';
-    const e = new Employee('Mohit', 1, testValue);
-    expect(e.email).toBe(testValue);
+test("Can set id via constructor argument", () => {
+  const testValue = 100;
+  const e = new Employee("Foo", testValue);
+  expect(e.id).toBe(testValue);
 });
 
-// Test if the getRole() value is Employee
-test('getRole() return Employee', () => {
-    const testValue = 'Employee';
-    const e = new Employee('Suresh', 1, 'workingemployee@gmail.com');
-    expect(e.getRole()).toBe(testValue);
+test("Can set email via constructor argument", () => {
+  const testValue = "employee@test.com";
+  const e = new Employee("Foo", 1, testValue);
+  expect(e.email).toBe(testValue);
+});
+
+test("Can get name via getName()", () => {
+  const testValue = "Jaya";
+  const e = new Employee(testValue);
+  expect(e.getName()).toBe(testValue);
+});
+
+test("Can get id via getId()", () => {
+  const testValue = 100;
+  const e = new Employee("Foo", testValue);
+  expect(e.getId()).toBe(testValue);
+});
+
+test("Can get email via getEmail()", () => {
+  const testValue = "employee@test.com";
+  const e = new Employee("Foo", 1, testValue);
+  expect(e.getEmail()).toBe(testValue);
+});
+
+test("getRole() should return \"Employee\"", () => {
+  const testValue = "Employee";
+  const e = new Employee("Jaya", 1, "employee@test.com");
+  expect(e.getRole()).toBe(testValue);
 });
