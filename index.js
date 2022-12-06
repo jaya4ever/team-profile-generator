@@ -146,7 +146,7 @@ const idArray = [];
             },
             {
                 type: "input",
-                name: "github",
+                name: "engineergithub",
                 message: "What's the engineer's GitHub username?",
                 validate: answer => {
                     if (answer !== "") {
