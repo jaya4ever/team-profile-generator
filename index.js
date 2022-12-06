@@ -18,3 +18,22 @@ const render = require('./src/page-template.js');
 // creating arrays for the team and id
 const teamArray = [];
 const idArray = [];
+
+//Working on the function to start the application
+ function init (){
+
+    //this will start the application when user prompt to create the manager
+    function addManager(){
+        inquirer.prompt([
+            {
+                type: "input",
+                name: "managerName",
+                message: "What's manager's name?",
+
+                
+               
+
+    }
+])
+ }
+ }
