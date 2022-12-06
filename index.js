@@ -29,11 +29,38 @@ const idArray = [];
                 type: "input",
                 name: "managerName",
                 message: "What's manager's name?",
+            },
+            {
+                type: 'input',
+                name: 'managerId',
+                message: "What is the manager's id?",
+            },
 
-                
+            {
+                type: 'input',
+                name: 'managerEmail',
+                message: "What's the manager's email?",
+            },
+            {
+                type: 'input',
+                name: 'managerOfficeNumber',
+                message: "What's the manager's office number?",
+            },
+            {
+                type: 'input',
+                name: 'managerId',
+                message: "What is the manager's id?",
+            },
+
+        ]).then(answers => {
+            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+            teamArray.push(manager);
+            idArray.push(answers.managerId);
+            addTeam();
+        });
                
 
-    }
-])
+   
+
  }
  }
