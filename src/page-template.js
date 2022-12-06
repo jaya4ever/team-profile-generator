@@ -1,4 +1,4 @@
-// Export function to generate HTML page
+//Exporting it to generate the HTML
 module.exports = team => {
     return `
     <!DOCTYPE html>
@@ -32,10 +32,10 @@ module.exports = team => {
     `;
 };
 
-// Create Team Profile
+//Working on creating the team Profile
 const createProfile = team => {
 
-    // Create Manager Profile
+    //Working on the Manager profile
     const createManager = manager => {
         return `
         <div class="card employee-card manager-card">
@@ -54,7 +54,7 @@ const createProfile = team => {
         `;
     };
 
-    // Create Engineer Profile
+    // Working on creating Engineer Profile
     const createEngineer = engineer => {
         return `
         <div class="card employee-card alert alert-info engineer-card">
@@ -66,6 +66,7 @@ const createProfile = team => {
                 <ul class="list-group alert alert-info text-dark">
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
+                    <!GitHub for Engineer not working -->
                     <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank"
                     rel="noopener noreferrer">${engineer.getGithub()}</a></li>
                     
@@ -75,7 +76,7 @@ const createProfile = team => {
         `;
     };
 
-    // Create Intern Profile
+    //Working on creatong Intern Profile
     const createIntern = intern => {
         return `
         <div class="card employee-card alert alert-info  intern-card">

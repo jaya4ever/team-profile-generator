@@ -81,7 +81,7 @@ const idArray = [];
         });
     }
 
-    // addTeam function after finish with addManager
+    // adding team now after manager
     function addTeam() {
         inquirer.prompt([
             {
@@ -108,7 +108,7 @@ const idArray = [];
         });
     }
 
-    // add an Engineer when selected
+    //Selecting and adding an engineer
     function addEngineer() {
         inquirer.prompt([
             {
@@ -145,9 +145,10 @@ const idArray = [];
                 }
             },
             {
+                //TODO:Engineer GitHub not responding
                 type: "input",
-                name: "engineergithub",
-                message: "What's the engineer's GitHub username?",
+                name: "engineergithub", 
+                message: "What's the engineer's GitHub username?", 
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -163,7 +164,7 @@ const idArray = [];
         });
     }
 
-    // Add an Intern when selected
+    //selecting and then adding an Intern
     function addIntern() {
         inquirer.prompt([
             {
@@ -221,7 +222,7 @@ const idArray = [];
     
     function generateHTML() {
 
-        // Create dist directory for index.html if it doesnt exist
+        //creating a dist path if it is not already there
         if (!fs.existsSync(DIST_DIR)) {
             fs.mkdirSync(DIST_DIR)
         }
