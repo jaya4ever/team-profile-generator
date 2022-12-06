@@ -24,6 +24,7 @@ const idArray = [];
 
     //this will start the application when user prompt to create the manager
     function addManager(){
+        console.log("building team profile");
         inquirer.prompt([
             {
                 type: "input",
