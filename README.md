@@ -1,10 +1,10 @@
-# team-profile-generator
-Team profile Generator
+# Team-Profile-Generator
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ### This is a  application for module challenge 10. I worked on this application with the help of my tutor, my team and was doing practicing. I was going through the class recording, [Mozilla]( https://developer.mozilla.org/en-US/docs/Web/JavaScript "dev.Mozilla"), [w3schools](https://www.w3schools.com/js/ "w3Schools"), asked questions in [stackoverflow](https://stackoverflow.com "stackoverflow.com"). . I took lot of help from everyone while conpleting this challenge. This was most challenging assignment I got so far. Language I have used HTML, JavaScript in this module. This is my learning stage and I am happy that I am struggling in this challenge because it will sharpen my knowledge and push me to do more. I am having trouble to update the GitHub username. I am trying my best to resolve this issues. As soon as I will resolve it then I will update it in my code and will do the Git push. This is one of the lengthy homework I am working on. This is full of fun and challenging and I learned a lot about constructor in JavaScript. This is so useful application for those who wants to create their team in less time and in an efficient way. This application can save time if any one wants to create their team, it will going to generate automatically.
 
-### This is the URL of my current repository which I named weather dashboard. Weather Dashboard is the name of my GitHub repository.
+### This is the URL of my current repository which I named team profile generator. Team profile generator is the name of my GitHub repository.
 [GitHub](https://github.com/jaya4ever/team-profile-generator "GitHub Repository")
 
 ### This is the screenshot of run test using jest
