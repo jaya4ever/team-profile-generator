@@ -10,6 +10,11 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+//this will take the recent file path and output the final destination path for the html
 const DIST_DIR = path.resolve(__dirname, 'dist')
 const outputPath = path.join(DIST_DIR, 'index.html');
 const render = require('./src/page-template.js');
+
+// creating arrays for the team and id
+const teamArray = [];
+const idArray = [];
