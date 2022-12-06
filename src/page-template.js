@@ -1,3 +1,4 @@
+// Export function to generate HTML page
 module.exports = team => {
     return `
     <!DOCTYPE html>
@@ -15,7 +16,7 @@ module.exports = team => {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 jumbotron text-white mb-3">
-                    <h1 class="text-center">My team</h1>
+                    <h1 class="text-center">The Dream Team</h1>
                 </div>
             </div>
         </div>
@@ -65,7 +66,7 @@ const createProfile = team => {
                 <ul class="list-group text-dark">
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                    <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGitHub()}" target="_blank" rel="noopener noreferrer">${engineer.getGitHub()}</a></li>
+                    
                 </ul>
             </div>
         </div>
