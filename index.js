@@ -13,7 +13,7 @@ const Intern = require('./lib/Intern');
 //this will take the recent file path and output the final destination path for the html
 const DIST_DIR = path.resolve(__dirname, 'dist')
 const outputPath = path.join(DIST_DIR, 'index.html');
-const render = require('./src/page-template.js');
+const render = require('./src/generateHTML.js');
 
 // creating arrays for the team and id
 const teamArray = [];
@@ -147,14 +147,16 @@ const idArray = [];
             {
                 //TODO:Engineer GitHub not responding
                 type: "input",
-                name: "engineergithub", 
+                name: "engineerGithub", 
                 message: "What's the engineer's GitHub username?", 
                 validate: answer => {
-                    if (answer !== "") {
+                    if (answer !== '') {
                         return true;
-                    }
+                    }else{
                     return "Please enter the engineer's GitHub username.";
                 }
+            }
+                
             }
         ]).then(answers => {
             const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);

@@ -18,7 +18,8 @@
 ![testprofile-generator](https://user-images.githubusercontent.com/111536082/205996711-6a2979d9-7e33-4e42-834e-3ba08272f183.jpeg)
 
 ### This is the preview of my team profile generator 
-![teamProfile-generator](https://user-images.githubusercontent.com/111536082/205989378-c1cee108-c4c1-497b-9e0b-3a08ab7a00a3.jpeg)
+![awesomeTeam-generator](https://user-images.githubusercontent.com/111536082/206568066-74772a9f-aafd-4e30-aaf6-095ba94514fe.jpeg)
+
 
 ### This is the recording of my team profile generator
 [team-profile-generator.webm](https://user-images.githubusercontent.com/111536082/205989948-9b70431f-1008-4c3d-b563-c07bc776e782.webm)
