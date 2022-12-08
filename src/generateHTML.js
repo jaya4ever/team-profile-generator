@@ -39,7 +39,7 @@ const createProfile = team => {
     const createManager = manager => {
         return `
         <div class="card employee-card manager-card">
-            <div class="card-header text-center">
+            <div class="card-header alert alert-success text-center">
                 <h2 style="color:Tomato;" class="card-title">${manager.getName()}</h2>
                 <h4 style="color:rgb(255, 71, 227);" class="card-title">Title: ${manager.getRole()}</h4>
             </div>
@@ -66,7 +66,7 @@ const createProfile = team => {
                 <ul class="list-group alert alert-info text-dark">
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                    <!GitHub for Engineer not working -->
+                   
                     <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank"
                     rel="noopener noreferrer">${engineer.getGithub()}</a></li>
                     
@@ -81,7 +81,7 @@ const createProfile = team => {
         return `
         <div class="card employee-card alert alert-info  intern-card">
             <div class="card-header alert alert-success text-center">
-                <h2 class="card-title">${intern.getName()}</h2>
+                <h2 style="color:Tomato;" class="card-title">${intern.getName()}</h2>
                 <h4 class="card-title">Title: ${intern.getRole()}</h4>
             </div>
             <div class="card-body alert alert-info bg-light">
